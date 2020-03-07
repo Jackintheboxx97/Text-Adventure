@@ -6,9 +6,16 @@ namespace Text_Adventure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Mirai");
-            Console.WriteLine("You've been sent to the future. You are now in the year 3005.");
-            Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.Blue;
+        
+            Console.Write(@"
+___________      __                        
+\_   _____/_ ___/  |_ __ _________   ____  
+ |    __)|  |  \   __\  |  \_  __ \_/ __ \ 
+ |     \ |  |  /|  | |  |  /|  | \/\  ___/ 
+ \___  / |____/ |__| |____/ |__|    \___  >
+     \/                                 \/ 
+");
         }
     }
 }
