@@ -7,15 +7,35 @@ namespace Text_Adventure
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-        
+
             Console.Write(@"
-___________      __                        
-\_   _____/_ ___/  |_ __ _________   ____  
- |    __)|  |  \   __\  |  \_  __ \_/ __ \ 
- |     \ |  |  /|  | |  |  /|  | \/\  ___/ 
- \___  / |____/ |__| |____/ |__|    \___  >
-     \/                                 \/ 
+__________                       ________
+\____    /____   ____   ____    /  _____/
+  /     //  _ \ /    \_/ __ \  /   __  \ 
+ /     /(  <_> )   |  \  ___/  \  |__\  \
+/_______ \____/|___|  /\___  >  \_____  /
+        \/          \/     \/         \/ 
 ");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            DelayWrite("Hey! Are you ok?");
+            Console.ReadLine();
+            DelayWrite("You look lost. Where are you from? You're clothes are kind of strange.");
+
+            
+        }
+        static void DelayWrite(string text, int charDelay = 75, bool DelayNewLine = true)
+        {
+            foreach(char c in text)
+            {
+                Console.Write(c);
+                System.Threading.Thread.Sleep(charDelay);
+            }
+            if (DelayNewLine) System.Threading.Thread.Sleep(1000);
+            Console.Write(Environment.NewLine);
+
+            
+            
         }
     }
 }
