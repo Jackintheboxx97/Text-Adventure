@@ -20,7 +20,8 @@ __________                       ________
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             DelayWrite("Hey! Are you ok?");
             Console.ReadLine();
-            DelayWrite("You look lost. Where are you from? You're clothes are kind of strange.");
+            DelayWrite("You don't look like you're from around here. Are you lost?");
+            Console.ReadLine();
 
             
         }
