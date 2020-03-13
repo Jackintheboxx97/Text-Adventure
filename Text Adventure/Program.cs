@@ -21,11 +21,11 @@ ___________.__             ________                          __      _____      
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             DelayWrite("It is 7:00 am. You have a very important interview at " +
-                "10:00 am for a job that you've been trying to get for three year!");
-            DelayWrite("You havent gotten much sleep all night due to high levels of excitement. " +
-                "Would you like to keep sleeping?");
-            string userSays = Console.ReadLine();
-            if(userSays == "")
+                "10:00 am for a job that you've been trying to get for three years!");
+            DelayWrite("You haven't gotten much sleep all night due to high levels of excitement. " +
+                "Would you like to keep sleeping? yes/no");
+            string userSays = Console.ReadLine().ToLower();
+            if(userSays == "yes")
             {
 
             }
