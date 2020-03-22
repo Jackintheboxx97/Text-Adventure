@@ -39,13 +39,14 @@ ___________.__             ________                          __      _____      
             }
             Console.ForegroundColor = ConsoleColor.Green;
             string keepSleep = Console.ReadLine().ToLower();
-            while (keepSleep == "duh") 
-            { 
+              
+            
               if (keepSleep == "duh")
               {
                 DelayWrite("You Overslept!");
-                Console.Beep();               
+                Console.Beep();
               }
+                
                 
             else if (keepSleep == "no")
             {
@@ -57,7 +58,7 @@ ___________.__             ________                          __      _____      
                 DelayWrite("I'm glad you're up! I'll give you some time to wash yourself, eat breakfast," +
                     " and grab a cup of coffee.");
             }
-            }
+            
             
             Console.WriteLine();
             DelayWrite("Alright! Now that you're all cleaned up, let's get your outfit ready. I've already chosen a pantsuit for you to wear.");           
